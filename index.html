@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melon Patch | Pilot Program</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
@@ -14,110 +14,118 @@
         }
 
         body {
-            background-color: var(--honeydew-mist);
+            background-color: var(--honeydew-mist) !important;
             font-family: 'Inter', sans-serif;
             color: var(--dark-sage);
             -webkit-font-smoothing: antialiased;
+            margin: 0;
+            padding: 0;
         }
 
-        .serif-italic {
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            font-weight: 400;
+        /* Exact match for the Serif Italic Headings */
+        h1, h2, h3, .serif-brand {
+            font-family: 'Playfair Display', serif !important;
+            font-style: italic !important;
+            font-weight: 400 !important;
+            color: var(--dark-sage);
         }
 
-        .caps-tracking {
+        /* Match for the Caps Spacing */
+        .tagline, .caps-tracking, button, footer {
+            font-family: 'Inter', sans-serif;
             text-transform: uppercase;
             letter-spacing: 0.4em;
             font-size: 0.7rem;
         }
 
-        .btn-outline {
-            border-bottom: 1px solid var(--rind-green);
+        .btn-brand {
+            background: transparent;
+            border: none;
+            cursor: pointer;
             color: var(--rind-green);
+            font-weight: 600;
             transition: all 0.3s;
+            border-bottom: 1px solid var(--rind-green);
+            padding-bottom: 4px;
+            text-decoration: none;
         }
 
-        .btn-outline:hover {
+        .btn-brand:hover {
             color: var(--dark-sage);
             letter-spacing: 0.45em;
         }
 
-        .instruction-card {
-            background-color: white;
-            mix-blend-mode: multiply; /* Matches main page logo feel */
+        .img-container {
+            mix-blend-mode: multiply;
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col items-center">
+<body class="flex flex-col items-center">
 
-    <header class="py-12 flex flex-col items-center">
-        <img src="https://melonpatch.co/logo.png" alt="MELONPATCH" class="w-[360px] h-auto mb-4">
-        <div class="tagline caps-tracking text-[var(--rind-green)]">An Intimate Evolution</div>
+    <header class="pt-[50px] pb-[20px] w-full flex justify-center">
+        <img src="https://melonpatch.co/logo.png" alt="MELONPATCH" class="w-[360px] h-auto img-container">
     </header>
 
-    <main class="max-w-3xl w-[90%] mx-auto pb-24 text-center">
+    <main class="max-w-[600px] w-[90%] flex flex-col items-center text-center pb-24">
         
-        <section class="mb-20">
-            <h1 class="text-4xl md:text-5xl mb-6 serif-italic">An Intimate Evolution</h1>
-            <p class="text-lg opacity-80 leading-relaxed font-light italic max-w-xl mx-auto serif-italic">
+        <div class="tagline text-[var(--rind-green)] mb-8">An Intimate Evolution</div>
+
+        <section class="mb-16">
+            <h1 class="text-4xl md:text-5xl mb-6">An Intimate Evolution</h1>
+            <p class="serif-brand text-lg opacity-85 leading-relaxed">
                 Welcome and thank you for participating in the Melon Patch pilot. We hope you enjoy the experience, and we would value your perspective.
             </p>
         </section>
 
-        <section class="mb-12">
-            <h2 class="text-xl caps-tracking text-[var(--rind-green)] mb-4">How to wear your liner</h2>
-            <div class="w-12 h-[1px] bg-[var(--rind-green)] mx-auto opacity-30"></div>
-        </section>
-
-        <section class="mb-20">
-            <div class="instruction-card p-4 border border-stone-100 rounded-sm">
+        <section class="mb-12 w-full">
+            <h2 class="caps-tracking text-[var(--rind-green)] mb-6">How to wear your liner</h2>
+            <div class="img-container p-4 bg-white border border-stone-100 rounded-sm mb-12">
                 <img src="IMG_3187.png" alt="Instructional Guide" class="w-full h-auto">
             </div>
         </section>
 
-        <section class="grid gap-12 pt-12 border-t border-[var(--rind-green)]/20 text-left">
+        <section class="grid gap-12 text-left w-full border-t border-[var(--rind-green)] pt-12">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="serif-italic text-2xl mb-2">01. Position</h3>
-                    <p class="font-light text-sm leading-relaxed opacity-80">Hold the liner with the center curved peak pointing upward.</p>
+                    <h3 class="text-2xl mb-2">01. Position</h3>
+                    <p class="text-sm font-light leading-relaxed">Hold the liner with the center curved peak pointing upward.</p>
                 </div>
                 <div>
-                    <h3 class="serif-italic text-2xl mb-2">02. Prepare</h3>
-                    <p class="font-light text-sm leading-relaxed opacity-80">Put your bra on as usual, keeping the band slightly loose.</p>
+                    <h3 class="text-2xl mb-2">02. Prepare</h3>
+                    <p class="text-sm font-light leading-relaxed">Put your bra on as usual, keeping the band slightly loose.</p>
                 </div>
                 <div>
-                    <h3 class="serif-italic text-2xl mb-2">03. Insert</h3>
-                    <p class="font-light text-sm leading-relaxed opacity-80">Tuck the liner directly under the bottom edge or underwire of your bra band.</p>
+                    <h3 class="text-2xl mb-2">03. Insert</h3>
+                    <p class="text-sm font-light leading-relaxed">Tuck the liner directly under the bottom edge of your bra band.</p>
                 </div>
             </div>
             <div class="grid md:grid-cols-2 gap-8 pt-4">
                 <div>
-                    <h3 class="serif-italic text-2xl mb-2">04. Center</h3>
-                    <p class="font-light text-sm leading-relaxed opacity-80">Ensure the liner sits flat against your skin with the peak resting between the breasts.</p>
+                    <h3 class="text-2xl mb-2">04. Center</h3>
+                    <p class="text-sm font-light leading-relaxed">Ensure the liner sits flat with the peak resting between the breasts.</p>
                 </div>
                 <div>
-                    <h3 class="serif-italic text-2xl mb-2">05. Secure</h3>
-                    <p class="font-light text-sm leading-relaxed opacity-80">Fasten and adjust your bra so it securely holds the liner in place.</p>
+                    <h3 class="text-2xl mb-2">05. Secure</h3>
+                    <p class="text-sm font-light leading-relaxed">Fasten and adjust your bra so it securely holds the liner in place.</p>
                 </div>
             </div>
         </section>
 
-        <section class="mt-24 py-20 border-t border-[var(--rind-green)]/20">
-            <h2 class="serif-italic text-4xl mb-6">Your Feedback</h2>
-            <p class="mb-10 text-stone-500 font-light max-w-md mx-auto serif-italic text-lg">
-                Your insight is essential as we refine the closest layers of comfort for our launch.
+        <section class="mt-20 py-16 border-t border-[var(--rind-green)] w-full">
+            <h2 class="text-4xl mb-6">Your Feedback</h2>
+            <p class="serif-brand text-xl mb-10 opacity-85">
+                Your insight is essential as we refine the closest layers of comfort.
             </p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUwQvZtgHKhFYYyOBYHRtnPPk55Y-1WWSRfl4--41t5sYJzg/viewform?usp=header" 
                target="_blank" 
-               class="caps-tracking btn-outline py-2 inline-block font-semibold">
+               class="btn-brand caps-tracking">
                 Share My Experience
             </a>
         </section>
 
     </main>
 
-    <footer class="mt-auto py-12 caps-tracking opacity-40">
+    <footer class="caps-tracking opacity-40 py-12">
         Est. 2026
     </footer>
 
