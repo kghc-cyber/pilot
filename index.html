@@ -3,72 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melon Patch | Pilot Instructions</title>
+    <title>Melon Patch | Pilot Program</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        .melon-gradient { background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); }
-        .accent-text { color: #2d5a27; } /* Forest green to match logo */
+        :root {
+            --melon-cream: #F5F2ED; /* Matches the homepage background */
+            --melon-green: #2D5A27; /* Matches the logo/header green */
+            --melon-text: #333333;
+        }
+        body { 
+            background-color: var(--melon-cream); 
+            font-family: 'Inter', sans-serif;
+            color: var(--melon-text);
+        }
+        h1, h2, h3, .serif { 
+            font-family: 'DM Serif Display', serif; 
+            color: var(--melon-green);
+        }
+        .btn-green {
+            background-color: var(--melon-green);
+            transition: opacity 0.2s ease;
+        }
+        .btn-green:hover { opacity: 0.9; }
     </style>
 </head>
-<body class="bg-stone-50 text-stone-800 font-sans">
+<body class="antialiased">
 
-    <header class="py-12 px-6 text-center bg-white border-b border-stone-100">
-        <h1 class="text-4xl font-bold tracking-tight accent-text mb-2">Melon Patch Pilot</h1>
-        <p class="text-stone-500 uppercase tracking-widest text-sm font-semibold">Instructions & Feedback</p>
-    </header>
+    <nav class="py-10 text-center">
+        <div class="text-3xl font-bold tracking-tight serif uppercase">Melon Patch</div>
+        <div class="text-[10px] tracking-[0.2em] uppercase mt-1 opacity-60">Stay Fresh. Stay You.</div>
+    </nav>
 
-    <main class="max-w-4xl mx-auto py-12 px-6">
+    <main class="max-w-3xl mx-auto px-6 pb-24">
         
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl mb-4">Pilot Instructions</h1>
+            <p class="text-lg opacity-70 leading-relaxed font-light">
+                An intimate evolution in moisture protection.<br>
+                Thank you for being part of our journey toward 2026.
+            </p>
+        </header>
+
         <section class="mb-20">
-            <h2 class="text-2xl font-bold mb-8 text-center">How to Wear Your Bra Liner</h2>
-            <div class="bg-white p-4 rounded-2xl shadow-md border border-stone-200">
-                <img src="IMG_3187.png" alt="How to wear a bra liner" class="w-full h-auto rounded-lg">
+            <div class="bg-white p-2 rounded-sm shadow-sm border border-stone-200/50">
+                <img src="IMG_3187.png" alt="How to wear a bra liner" class="w-full h-auto">
             </div>
         </section>
 
-        <section class="grid md:grid-cols-2 gap-8 mb-20">
-            <div class="space-y-6">
-                <div class="flex gap-4">
-                    <span class="bg-stone-800 text-white w-8 h-8 rounded-full flex items-center justify-center shrink-0 font-bold">1</span>
-                    <p><strong class="block">Position</strong> Hold the liner with the center curved peak pointing upward.</p>
+        <section class="grid gap-10 border-t border-stone-300 pt-12">
+            <div class="grid md:grid-cols-3 gap-8 text-sm">
+                <div>
+                    <h3 class="text-xl mb-2">01. Position</h3>
+                    <p class="font-light leading-relaxed">Hold the liner with the center curved peak pointing upward toward the chest.</p>
                 </div>
-                <div class="flex gap-4">
-                    <span class="bg-stone-800 text-white w-8 h-8 rounded-full flex items-center justify-center shrink-0 font-bold">2</span>
-                    <p><strong class="block">Prepare</strong> Put your bra on, but leave the band slightly loose.</p>
+                <div>
+                    <h3 class="text-xl mb-2">02. Prepare</h3>
+                    <p class="font-light leading-relaxed">Put your bra on as usual, but keep the band slightly loose for the initial placement.</p>
                 </div>
-                <div class="flex gap-4">
-                    <span class="bg-stone-800 text-white w-8 h-8 rounded-full flex items-center justify-center shrink-0 font-bold">3</span>
-                    <p><strong class="block">Insert</strong> Tuck the liner directly under the bottom edge (band or underwire) of your bra.</p>
+                <div>
+                    <h3 class="text-xl mb-2">03. Insert</h3>
+                    <p class="font-light leading-relaxed">Tuck the liner directly under the bottom edge or underwire of your bra band.</p>
                 </div>
             </div>
-            <div class="space-y-6">
-                <div class="flex gap-4">
-                    <span class="bg-stone-800 text-white w-8 h-8 rounded-full flex items-center justify-center shrink-0 font-bold">4</span>
-                    <p><strong class="block">Center</strong> Ensure the liner sits flat against your skin, with the center peak resting between your breasts.</p>
+            <div class="grid md:grid-cols-2 gap-8 text-sm pt-4">
+                <div>
+                    <h3 class="text-xl mb-2">04. Center</h3>
+                    <p class="font-light leading-relaxed">Ensure the liner sits flat against your skin with the peak resting between the breasts.</p>
                 </div>
-                <div class="flex gap-4">
-                    <span class="bg-stone-800 text-white w-8 h-8 rounded-full flex items-center justify-center shrink-0 font-bold">5</span>
-                    <p><strong class="block">Secure</strong> Fasten and adjust your bra as usual to hold the liner in place.</p>
+                <div>
+                    <h3 class="text-xl mb-2">05. Secure</h3>
+                    <p class="font-light leading-relaxed">Fasten and adjust your bra as usual so it securely holds the liner in place.</p>
                 </div>
             </div>
         </section>
 
-        <section class="text-center bg-stone-900 text-white p-12 rounded-3xl shadow-xl">
-            <h2 class="text-3xl font-bold mb-4">How did it feel?</h2>
-            <p class="text-stone-400 mb-8 max-w-lg mx-auto">
-                Your feedback is essential to our May launch. Please take 2 minutes to let us know about your experience with the pilot liners.
+        <section class="mt-24 text-center py-16 border-t border-stone-300">
+            <h2 class="text-3xl mb-6">Your Thoughts</h2>
+            <p class="mb-10 text-stone-600 font-light max-w-md mx-auto">
+                As part of the pilot program, your feedback helps us refine the closest layers of comfort.
             </p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUwQvZtgHKhFYYyOBYHRtnPPk55Y-1WWSRfl4--41t5sYJzg/viewform?usp=header" 
                target="_blank" 
-               class="inline-block bg-white text-stone-900 px-10 py-4 rounded-full font-bold text-lg hover:bg-stone-200 transition-transform hover:scale-105">
-                Send Us Feedback
+               class="btn-green text-white px-12 py-4 rounded-full text-sm tracking-widest uppercase font-semibold">
+                Share Feedback
             </a>
         </section>
 
     </main>
 
-    <footer class="text-center py-12 text-stone-400 text-sm">
-        &copy; 2026 Melon Patch. Discreet. Comfortable. Dry.
+    <footer class="text-center py-12 text-[10px] tracking-widest uppercase opacity-40">
+        Est. 2026 &copy; Melon Patch
     </footer>
 
 </body>
